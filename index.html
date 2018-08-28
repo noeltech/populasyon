@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+   <script src='https://api.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.js'></script>
+   <link href='https://api.mapbox.com/mapbox-gl-js/v0.39.1/mapbox-gl.css' rel='stylesheet' />
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title> Population Map</title>
+  </head>
+  <body>
+    <header>
+      <h1>Western Visayas Population</h1>
+    </header>
+
+    <main>
+      <div id='map' style='width: 1300px; height: 750px;'>
+
+        <!-- <div class="map-legend-container"> -->
+        <!-- </div> -->
+        <div id='zoom-level'>
+        </div>
+        <div class='map-legend-1' id='pd'>
+          <p>Hover over a municipality!</p>
+        </div>
+        <div class="legend" id = "island-legend">
+          <h4>Population</h4>
+          <div class="legend-key"><span style='background-color:#d1ae57'></span><h3>4,477,247</h3></div>
+        </div>
+        <div class="legend" id = "province-legend" style="display:none;">
+          <h4>Population</h4>
+          <div class="legend-key"><span style='background-color:#EAE1B1'></span><h3>174,613</h3></div>
+          <div class="legend-key"><span style='background-color:#E2C98C'></span><h3>574,823</h3></div>
+          <div class="legend-key"><span style='background-color:#DAA969'></span><h3>582,012</h3></div>
+          <div class="legend-key"><span style='background-color:#D28248'></span><h3>761,384</h3></div>
+          <div class="legend-key"><span style='background-color:#CA5629'></span><h3>1,936,423</h3></div>
+        </div>
+        <div class="legend" id = "municipal-legend" style="display:none;">
+          <h4>Population</h4>
+          <div class="legend-key"><span style='background-color:#E0D485'></span><h3>0-20,000</h3></div>
+          <div class="legend-key"><span style='background-color:#B2D56C'></span><h3>20,001-40,000</h3></div>
+          <div class="legend-key"><span style='background-color:#6ECA56'></span><h3>40,001-60,000</h3></div>
+          <div class="legend-key"><span style='background-color:#41C060'></span><h3>60,001-80,000</h3></div>
+          <div class="legend-key"><span style='background-color:#2EB58C'></span><h3>80,001-100,000</h3></div>
+          <div class="legend-key"><span style='background-color:#1D94AA'></span><h3>100,001-200,000</h3></div>
+          <div class="legend-key"><span style='background-color:#0E47A0'></span><h3>200,001-400,000</h3></div>
+        </div>
+        <div class="legend" id = "barangay-legend" style="display:none;">
+          <h4>Population</h4>
+          <div class="legend-key"><span style='background-color:#DFDC9F'></span><h3>0-5003</h3></div>
+          <div class="legend-key"><span style='background-color:#BFCA80'></span><h3>501-1,000</h3></div>
+          <div class="legend-key"><span style='background-color:#99B565'></span><h3>1,001-1,500</h3></div>
+          <div class="legend-key"><span style='background-color:#73A14C'></span><h3>1,501-3,000</h3></div>
+          <div class="legend-key"><span style='background-color:#4D8C38'></span><h3>3,001-6,000</h3></div>
+          <div class="legend-key"><span style='background-color:#2B7726'></span><h3>6,001-12,000</h3></div>
+          <div class="legend-key"><span style='background-color:#186322'></span><h3>12,001-50,000</h3></div>
+
+        </div>
+      </div>
+        <script  src="js/main.js"></script>
+    </main>
+  </body>
+</html>
